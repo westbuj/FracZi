@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content" android:orientation="horizontal">
+  
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content" android:orientation="vertical">
+
+ <TextView
+      android:id="@+id/Eqlabel"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="Formula"
+      android:textSize="6pt" >
+</TextView>
+
+  <EditText
+      android:id="@+id/equation_entry"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:inputType="textMultiLine"      
+      android:textSize="6pt"
+      >  
+  </EditText>
+<TextView
+    android:id="@+id/rangelabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Range"
+    android:textSize="7pt" >
+</TextView>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1">
+<TableRow> 
+  
+  <TextView
+      android:id="@+id/x1label"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:text="X1:"
+      android:textSize="6pt" >
+</TextView>
+
+  <EditText
+      android:id="@+id/x1Entry"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:inputType="numberDecimal|numberSigned" 
+      android:textSize="6pt"
+      >
+     
+  </EditText>
+ 
+</TableRow>
+<TableRow> 
+  
+  <TextView
+      android:id="@+id/y1Label"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:text="Y1:"
+      android:textSize="6pt" >
+</TextView>
+
+ <EditText
+      android:id="@+id/y1Entry"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:inputType="numberDecimal|numberSigned"
+      android:textSize="6pt"
+     >
+     
+  </EditText>
+ 
+</TableRow>
+
+
+<TableRow> 
+  
+  <TextView
+      android:id="@+id/x2label"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:text="X2:"
+      android:textSize="6pt" >
+</TextView>
+
+  <EditText
+      android:id="@+id/x2Entry"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:inputType="numberDecimal|numberSigned"
+      android:textSize="6pt"
+     >
+     
+  </EditText>
+ 
+</TableRow>
+
+<TableRow> 
+  
+  <TextView
+      android:id="@+id/y2Label"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:text="Y2:"
+      android:textSize="6pt" >
+</TextView>
+
+  <EditText
+      android:id="@+id/y2Entry"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:inputType="numberDecimal|numberSigned"
+      android:enabled="false"
+      android:textSize="6pt"
+     >
+     
+  </EditText>
+ 
+</TableRow>
+</TableLayout>
+
+
+<TextView
+    android:id="@+id/seedlabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Seed"
+    android:textSize="7pt" >
+</TextView>
+
+
+  <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1">
+<TableRow>
+  <TextView
+      android:id="@+id/aseedlabel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="A:"
+      android:textSize="6pt" >
+</TextView>
+
+  <EditText
+      android:id="@+id/aSeedEntry"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:inputType="numberDecimal|numberSigned"
+      android:textSize="6pt"
+      >
+
+      
+  </EditText>
+ 
+
+</TableRow>
+
+<TableRow> 
+  
+  <TextView
+      android:id="@+id/bsSeedLabel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="B:"
+      android:textSize="6pt" >
+</TextView>
+
+  <EditText
+      android:id="@+id/bSeedEntry"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:inputType="numberDecimal|numberSigned"
+      android:textSize="6pt"
+      >
+
+      
+  </EditText>
+ 
+</TableRow>
+</TableLayout>
+ 
+<TextView
+    android:id="@+id/RenderLabel"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Render Details"
+    android:textSize="7pt" >
+</TextView>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1">
+
+
+<TableRow>
+ <TextView
+      android:id="@+id/MaxItsLabel"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:text="Max\nIts"
+      android:textSize="6pt" >
+</TextView>
+
+  <EditText
+      android:id="@+id/Max_Its_Entry"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:inputType="text"
+      android:textSize="6pt"
+      >
+
+      
+  </EditText>
+ 
+</TableRow>
+
+<TableRow>
+ <TextView
+      android:id="@+id/Inflabel"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:text="Max\nInf"
+      android:textSize="6pt" >
+</TextView>
+
+  <EditText
+      android:id="@+id/MaxInf_Entry"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:inputType="text"
+      android:textSize="6pt"
+       >
+
+      
+  </EditText>
+ 
+</TableRow>
+
+ 
+ 
+<TableRow>
+ <TextView
+      android:id="@+id/startInflabel"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:text="Start\nInf"
+      android:textSize="6pt" >
+</TextView>
+
+  <EditText
+      android:id="@+id/startInfEntry"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:textSize="6pt" 
+      android:inputType="text"
+      >
+
+      
+  </EditText>
+ 
+</TableRow>
+
+<TableRow>
+ <TextView
+      android:id="@+id/inFInclabel"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:text="Inf\nInc"
+      android:textSize="6pt" >
+</TextView>
+
+  <EditText
+      android:id="@+id/InfIncEntry"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:inputType="text"
+      android:textSize="6pt" 
+      >
+
+      
+  </EditText>
+ 
+</TableRow>
+
+<TableRow>
+ <TextView
+      android:id="@+id/startitsseedlabel"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:text="Start\nIts"
+      android:textSize="6pt" >
+</TextView>
+
+  <EditText
+      android:id="@+id/StartItsEntry"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:textSize="6pt" 
+      android:inputType="text"
+      >
+
+      
+  </EditText>
+ 
+</TableRow>
+
+<TableRow>
+ <TextView
+      android:id="@+id/itsInclabel"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:text="Its\nInc"
+      android:textSize="6pt" >
+</TextView>
+
+  <EditText
+      android:id="@+id/ItsIncEntry"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:textSize="6pt" 
+      android:inputType="text"
+      >
+
+      
+  </EditText>
+ 
+</TableRow>
+</TableLayout>
+
+<TextView
+    android:id="@+id/colorModeGrouplabel"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Color Representation"
+    android:textSize="7pt" >
+</TextView>
+
+<RadioGroup
+    android:id="@+id/colorModeGroup"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:orientation="horizontal" >
+
+
+    <RadioButton
+        android:id="@+id/colorMode_RGB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="RGB" 
+        
+        />
+
+    <RadioButton
+        android:id="@+id/ColorMode_CYMK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CYMK" 
+        
+        />
+
+    <RadioButton
+        android:id="@+id/ColorMode_HSL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HSL" 
+       
+        />
+</RadioGroup>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1">
+<TableRow>
+ <TextView
+      android:id="@+id/RedLabel"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:text="Red"
+      android:textSize="6pt" >
+</TextView>
+
+  <EditText
+      android:id="@+id/RedEquationEntry"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:inputType="text"      
+      android:textSize="6pt"      
+      >
+
+      
+  </EditText>
+ 
+</TableRow>
+<TableRow>
+ <TextView
+      android:id="@+id/greenLabel"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:text="Green"
+      android:textSize="6pt" >
+</TextView>
+
+  <EditText
+      android:id="@+id/GreenEquationEntry"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+       android:inputType="text"     
+      android:textSize="6pt"
+      >
+
+      
+  </EditText>
+ 
+</TableRow>
+
+<TableRow>
+
+    
+ <TextView
+      android:id="@+id/bluelabel"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:text="Blue"
+      android:textSize="6pt" >
+</TextView>
+
+  <EditText
+      android:id="@+id/BlueEquationEntry"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+       android:inputType="text"      
+      android:textSize="6pt"
+      >
+
+      
+  </EditText>
+ 
+</TableRow>
+
+</TableLayout>
+
+
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1">
+<TableRow>
+ <TextView
+      android:id="@+id/Cyanlabel"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:text="Cyan"
+      android:textSize="6pt" >
+</TextView>
+
+  <EditText
+      android:id="@+id/CyanEquationEntry"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:inputType="text"      
+      android:textSize="6pt"
+      >
+
+      
+  </EditText>
+ 
+</TableRow>
+<TableRow>
+ <TextView
+      android:id="@+id/magentalabel"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:text="Magenta"
+      android:textSize="6pt" >
+</TextView>
+
+  <EditText
+      android:id="@+id/MagentaEquationEntry"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:inputType="text"      
+      android:textSize="6pt"
+      >
+
+      
+  </EditText>
+ 
+</TableRow>
+
+<TableRow>
+
+    
+ <TextView
+      android:id="@+id/yellowlabel"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:text="Yellow"
+      android:textSize="6pt" >
+</TextView>
+
+  <EditText
+      android:id="@+id/YellowEquationEntry"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:inputType="text"      
+      android:textSize="6pt"
+      >
+
+      
+  </EditText>
+ 
+</TableRow>
+
+<TableRow>
+
+    
+ <TextView
+      android:id="@+id/blacklabel"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:text="Black"
+      android:textSize="6pt" >
+</TextView>
+
+  <EditText
+      android:id="@+id/BlackEquationEntry"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:inputType="text"      
+      android:textSize="6pt"
+      >
+
+      
+  </EditText>
+ 
+</TableRow>
+
+</TableLayout>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1">
+<TableRow>
+ <TextView
+      android:id="@+id/hueseedlabel"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:text="Hue:"
+      android:textSize="6pt" >
+</TextView>
+
+  <EditText
+      android:id="@+id/HueEquationEntry"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:inputType="text"      
+      android:textSize="6pt"
+      >
+
+      
+  </EditText>
+ 
+</TableRow>
+<TableRow>
+ <TextView
+      android:id="@+id/saturationseedlabel"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:text="Sat"
+      android:textSize="6pt" >
+</TextView>
+
+  <EditText
+      android:id="@+id/SaturationEquationEntry"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:inputType="text"      
+      android:textSize="6pt"
+      >
+
+      
+  </EditText>
+ 
+</TableRow>
+
+<TableRow>
+
+    
+ <TextView
+      android:id="@+id/levellabel"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:text="Level"
+      android:textSize="6pt" >
+</TextView>
+
+  <EditText
+      android:id="@+id/LevelEquationEntry"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:inputType="text"      
+      android:textSize="6pt"
+      >
+
+      
+  </EditText>
+ 
+</TableRow>
+
+</TableLayout>
+
+<CheckBox
+    android:id="@+id/saveEveryRenderOption"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Save all completed images" />
+
+<Button
+        android:id="@+id/screen_render_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Render Escape Time" />
+
+<Button
+        android:id="@+id/screen_render_orbit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Render Orbit Method" />
+
+</LinearLayout>
+</ScrollView>
+
+
